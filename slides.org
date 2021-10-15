@@ -1,0 +1,7 @@
+#+TITLE: Hacker Tools 2021: Emacs
+
+* What is Emacs
+- Extensible, customizable, self-documenting +Operating System+ Text Editor
+- Programming environment designed around manipulation of text
+* Getting help
+- Emacs is /self-documenting/
