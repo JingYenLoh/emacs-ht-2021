@@ -1,6 +1,6 @@
 #+TITLE: Introduction to (Doom) Emacs
 
-* What is Emacs
+* What is Emacs?
 - Extensible, customizable, self-documenting +Operating System+ Text Editor
 - Programming environment (Elisp) designed around manipulation of text
 - one tool for (almost?) everything
@@ -31,7 +31,7 @@
 - =M-x= → =Alt-x=
 - What we know as Editor → Window in Emacs
 - What we know as Window → Frame in Emacs
-* Speedrun of Vanilla Emacs
+* Speedrun of vanilla Emacs
 - Navigation (incl. scrolling)
 - Opening files
 - Creating windows
@@ -75,7 +75,7 @@ Let's try configuring our own changes!
 * Adding packages
 Let's try configuring our own changes!
 - [[https://github.com/casouri/valign][valign]]
-* Other crazy hacks
+* Some crazy hacks
 - [[https://github.com/ch11ng/exwm][EXWM]] (Emacs as Window manager)
 - [[https://github.com/emacs-eaf/emacs-application-framework][Emacs Application Framework]] (Running Qt apps in Emacs)
 - [[https://github.com/zevlg/telega.el][telega.el]] (Telegram client, there's a Slack one too)
