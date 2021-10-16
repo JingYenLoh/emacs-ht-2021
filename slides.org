@@ -1,7 +1,88 @@
-#+TITLE: Hacker Tools 2021: Emacs
+#+TITLE: Introduction to (Doom) Emacs
 
 * What is Emacs
 - Extensible, customizable, self-documenting +Operating System+ Text Editor
-- Programming environment designed around manipulation of text
+- Programming environment (Elisp) designed around manipulation of text
+- one tool for (almost?) everything
+* Highlights
+- Extensibility
+- Ecosystem
+  - note-taking/todo list (Org-mode)
+  - version control (Magit)
+  - Mail (mu4e, notmuch)
+* Doom Emacs
+- Emacs configuration framework
+  - Alternatives: [[https://github.com/bbatsov/prelude][Prelude]], [[https://www.spacemacs.org/][Spacemacs]], [[https://github.com/seagle0128/.emacs.d][Centaur Emacs]]
+- Vim bindings by default (can be disabled)
+* Why teach this workshop with Doom?
+- Vanilla Emacs learning curve
+- Fair bit of tweaking needed to get on par with modern editors
+- Doom abstracts a good amount of these away…
+  - …without taking away control if you wish to customize it
+* Getting started
+- Ubuntu VM with Emacs provided
+  - Username =attendee=
+  - Password =password= (highly secure)
+- Feel free to use your own setup
+  - Git, ripgrep, and GNU =find= required
+  - =fd= (=find= alternative) optional
+* Some Emacs terminology
+- =C-x= → =Ctrl-x=
+- =M-x= → =Alt-x=
+- What we know as Editor → Window in Emacs
+- What we know as Window → Frame in Emacs
+* Speedrun of Vanilla Emacs
+- Navigation (incl. scrolling)
+- Opening files
+- Creating windows
+- Searching
+* Setting up Doom
+#+begin_src sh
+git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d
+~/.emacs.d/bin/doom install
+#+end_src
 * Getting help
 - Emacs is /self-documenting/
+- =SPC h=  (=C-h= in Vanilla Emacs)
+  - =SPC H f= Describe function
+  - =SPC H v= Describe variable
+  - =SPC H k= Describe key
+  - =SPC H i= Open Info page
+  - =SPC H W= Open manpage
+* Doom help
+- =SPC h d=
+* Doom configuration structure
+- =init.el= controls what Doom modules are enabled and their load order
+- =config.el= Most of your own configurations go here
+- =packages.el= Your own package declarations go here
+- =autoload.el= or =autoload/*.el= Your autoloaded functions go here
+* Enabling modules
+Let's try enabling some modules!
+* Testing out some packages
+This is a slide to remind myself to explain the pre-enabled modules.
+* Org-mode
+- Markup language
+- Note taking
+- TODO list
+- literate programming
+- exporting
+* Magit
+- git client
+- …I wouldn't know how to use git without this
+* TRAMP
+* Making your own tweaks
+Let's try configuring our own changes!
+* Adding packages
+Let's try configuring our own changes!
+- [[https://github.com/casouri/valign][valign]]
+* Other crazy hacks
+- [[https://github.com/ch11ng/exwm][EXWM]] (Emacs as Window manager)
+- [[https://github.com/emacs-eaf/emacs-application-framework][Emacs Application Framework]] (Running Qt apps in Emacs)
+- [[https://github.com/zevlg/telega.el][telega.el]] (Telegram client, there's a Slack one too)
+- [[https://web.archive.org/web/20210123015051/https://www.natquaylenelson.com//2019/11/19/emacs-fury-road.html][Hacking Emacs onto an old car]]
+* The End
+#+begin_src python :results output
+msg = [84, 104, 97, 110, 107, 32, 121, 111, 117, 32, 101, 118, 101, 114, 121, 111, 110, 101, 33]
+
+print(''.join([chr(x) for x in msg]))
+#+end_src
